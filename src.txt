@@ -1,0 +1,1 @@
+$ cat c:/ch/qu.txt | grep -P '^.{2}?[0-9]+' | sed 's/[^\t]//; s/[^\t]//' | awk -f src.awk | grep . > qu1.txt
