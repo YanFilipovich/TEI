@@ -5,13 +5,15 @@ BEGIN {
     print "<div"x">" 
     } 
     {
-        y=y+$0; if( y > x ) {
+        y = y + $0;
+         
+        if( y > x ) {
             print "</div"x">";
-            x=x+1; 
+            x = x + 1; 
             print "<div"x">" 
             }; 
-    y=0 ; 
-    print "<s>"$0"</s>"
+        y = 0; 
+        print "<s>"$0"</s>"
     }
     END {
         print "</div"x">";
